@@ -2,7 +2,7 @@
 <html lang="fa" dir="rtl">
 
 <head>
-	<title>لیست کاربران</title>
+	<title>ثبت دوره</title>
 
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
@@ -106,7 +106,7 @@
 
 			<!-- Sidebar menu START -->
 			<ul class="navbar-nav flex-column" id="navbar-sidebar">
-				<li class="nav-item"><a  href="#"><i class="bi bi-basket fa-fw me-2"></i>دسته بندی</a>
+				<li class="nav-item"><a  href="#"><i class="bi bi-basket fa-fw me-2"></i>ثبت دوره</a>
 				</li>
 			</ul>
 			<!-- Sidebar menu end -->
@@ -336,110 +336,75 @@
 	<!-- Page main content START -->
 	<div class="page-content-wrapper border">
 
-		<!-- Title -->
-		<div class="row mb-3">
-			<h1 class="h3 mb-5 mb-sm-0 fs-5 ">نقش کاربر</h1>
-			<div class="col-12 mt-5 d-sm-flex justify-content-between align-items-center">
-				<div class="card-body">
-					<form class="row g-4">
-						<div class="col-6">
-							<label class="form-label">سید ایمان هاشمی</label>
-						</div>
-						<div class="col-lg-6">
-							<button type="button" class="btn btn-primary mb-0">افزودن  نقش</button>
-						</div>
-					</form>
-				</div>
-			</div>
-			<div class="col-12 mt-5 d-sm-flex justify-content-start align-items-center">
-				
-					<div class="col-2">
-						<div class="d-flex gap-3 align-items-center">
-							<label for="" class="form-label">نقش </label>
-							<input type="checkbox" class="form-check" value="">
-						</div>
+		<h4 class="fs-5 ff-vb">جزئیات دوره</h4>
+
+		<hr> <!-- Divider -->
+
+		<!-- Basic information START -->
+		<div class="row g-4">
+
+			<div class="col-12">
+				<div class="text-center justify-content-center align-items-center p-4 p-sm-5 border border-2 border-dashed position-relative rounded-3">
+					<label class="form-label">آپلود ویدیو</label>
+					
+						<div class="input-group mb-3">
+						<label class="input-group-text" dir="ltr">.mp4</label>
+							<input type="text" class="form-control upload-name-mp4 border-end-0" id="inputGroupFile01"/>
+							<span class="btn btn btn-secondary-soft cursor-pointer upload-button-mp4 border-start-0">آپلود فایل</span>
+							
 					</div>
+					<input type="file" class="d-none hidden-upload-mp4"/>	
+						 	
+				</div>
+				
 				
 			</div>
-		</div>
-
-		<div class="card bg-transparent border">
-			<!-- Card body START -->
-			<div class="card-body">
-				<!-- Course table START -->
-				<div class="table-responsive border-0 rounded-3">
-					<!-- Table START -->
-					<table class="table table-dark-gray align-middle p-4 mb-0 table-hover">
-						<!-- Table head -->
-						<thead>
-							<tr>
-								<th scope="col" class="border-0 rounded-start">عکس</th>
-								<th scope="col" class="border-0 rounded-start">نام و نام خانوادگی</th>
-								<th scope="col" class="border-0">نقش ها</th>
-								<th scope="col" class="border-0">تاریخ ایجاد</th>
-								<th scope="col" class="border-0 rounded-end">عملیات</th>
-							</tr>
-						</thead>
-						<tbody>
-							<tr>
-								<td>
-									<div class="d-flex align-items-center position-relative">
-										<div class="avatar avatar-md flex-shrink-0">
-											<img class="avatar-img rounded-circle" src="assets/images/avatar/01.jpg" alt="avatar">
-										</div>
-									</div>
-								</td>
-								<td>
-									<div class="d-flex align-items-center position-relative">
-										<h6 class="table-responsive-title mb-0 ms-2">	
-											<a href="#" class="stretched-link">سید ایمان هاشمی</a>
-										</h6>
-									</div>
-								</td>
-								<td>
-									<div class="d-flex align-items-center position-relative">
-										<ul>
-											
-											<li>نقش</li>
-											
-										</ul>
-									</div>
-								</td>
-								<td> 1403/3/27</td>
-								<td>
-									<a href="#" class="btn btn-sm btn-success me-1 mb-1 mb-md-0">افزودن نقش</a>
-									<a href="#" class="btn btn-sm btn-warning me-1 mb-1 mb-md-0">وضعیت</a>
-								</td>
-							</tr>
-						</tbody>
-						<!-- Table body END -->
-					</table>
-					<!-- Table END -->
-				</div>
-				<!-- Course table END -->
+			<!-- Course title -->
+			<div class="col-12">
+				<label class="form-label">عنوان</label>
+				<input class="form-control" type="text" placeholder="آموزش ساخت وب سایت خبری">
 			</div>
-			<!-- Card body END -->
 
-			<!-- Card footer START -->
-			<div class="card-footer bg-transparent pt-0">
-				<!-- Pagination START -->
-				<div class="d-sm-flex justify-content-sm-between align-items-sm-center">
-					<!-- Pagination -->
-					<nav class="d-flex justify-content-center mb-0" aria-label="navigation">
-						<ul class="pagination pagination-sm pagination-primary-soft d-inline-block d-md-flex rounded mb-0">
-							<li class="page-item mb-0"><a class="page-link" href="#" tabindex="-1"><i class="fas fa-angle-right"></i></a></li>
-							<li class="page-item mb-0"><a class="page-link" href="#">1</a></li>
-							<li class="page-item mb-0 active"><a class="page-link" href="#">2</a></li>
-							<li class="page-item mb-0"><a class="page-link" href="#">3</a></li>
-							<li class="page-item mb-0"><a class="page-link" href="#"><i class="fas fa-angle-left"></i></a></li>
-						</ul>
-					</nav>
-				</div>
-				<!-- Pagination END -->
+			<!-- Short description -->
+			<div class="col-12">
+				<label class="form-label">توضیحات کوتاه</label>
+				<textarea class="form-control" rows="2" placeholder="کلمات کلیدی"></textarea>
 			</div>
-			<!-- Card footer END -->
-		</div>
-		<!-- Card END -->
+
+			<!-- Course category -->
+			<div class="col-md-6">
+				<label class="form-label">دسته بندی</label>
+				<select class="form-select js-choice border-0 z-index-9 bg-transparent" aria-label=".form-select-sm" data-search-enabled="true">
+					<option value="">انتخاب</option>
+					<option>مهندسی</option>
+					<option>پزشکی</option>
+					<option>طراحی وب</option>
+					<option>حسابداری</option>
+					<option>برنامه نویسی</option>
+				</select>
+			</div>
+
+			<!-- Course level -->
+			<div class="col-md-6">
+				<label class="form-label">سطح دوره</label>
+				<select class="form-select js-choice border-0 z-index-9 bg-transparent" aria-label=".form-select-sm" data-search-enabled="false" data-remove-item-button="true">
+					<option value="">انتخاب سطح</option>
+					<option>همه</option>
+					<option>مقدماتی</option>
+					<option>متوسطه</option>
+					<option>پیشرفته</option>
+				</select>
+			</div>
+
+			<!-- Course price -->
+			<div class="col-md-6">
+				<label class="form-label">قیمت</label>
+				<input type="text" class="form-control" placeholder="90,000 تومان">
+			</div>
+			<div class="col-md-6 d-flex align-items-center mt-6">
+				<button class="btn btn-primary">ثبت</button>
+			</div>
+	
 	</div>
 	<!-- Page main content END -->
 </div>
@@ -460,7 +425,20 @@
 
 <!-- Template Functions -->
 <script src="assets/js/functions.js"></script>
+<script>
+	
+   // Upload File .mp4
+	   document.querySelector(".upload-button-mp4").onclick = function() {
+		 document.querySelector(".hidden-upload-mp4").click(); 
+   };
 
+   document.querySelector(".hidden-upload-mp4").onchange = function() {
+	      document.querySelector(".upload-name-mp4").value = event.target.files[0].name;
+	};	
+   
+
+	
+</script>
 </body>
 
 </html>
