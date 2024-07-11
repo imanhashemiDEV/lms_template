@@ -2,7 +2,7 @@
 <html lang="fa" dir="rtl">
 
 <head>
-	<title>ثبت دوره</title>
+	<title>ثبت جزئیات دوره</title>
 
 	<!-- Meta Tags -->
 	<meta charset="utf-8">
@@ -106,7 +106,7 @@
 
 			<!-- Sidebar menu START -->
 			<ul class="navbar-nav flex-column" id="navbar-sidebar">
-				<li class="nav-item"><a  href="#"><i class="bi bi-basket fa-fw me-2"></i>ثبت دوره</a>
+				<li class="nav-item"><a  href="#"><i class="bi bi-basket fa-fw me-2"></i>ثبت جزئیات دوره</a>
 				</li>
 			</ul>
 			<!-- Sidebar menu end -->
@@ -345,8 +345,8 @@
 			<div class="row">
 				<!-- Add lecture Modal button -->
 				<div class="d-sm-flex justify-content-sm-between align-items-center mb-3">
-					<h5 class="mb-2 mb-sm-0">آپلود دوره</h5>
-					<a href="#" class="btn btn-sm btn-primary-soft mb-0" data-bs-toggle="modal" data-bs-target="#addLecture"><i class="bi bi-plus-circle me-2"></i>افزودن دوره</a>
+					<h5 class="mb-2 mb-sm-0">آپلود جلسات دوره</h5>
+					<a href="#" class="btn btn-sm btn-primary-soft mb-0" data-bs-toggle="modal" data-bs-target="#addLecture"><i class="bi bi-plus-circle me-2"></i>افزودن فصل</a>
 				</div>
 
 				<!-- Edit lecture START -->
@@ -449,15 +449,15 @@
 			<div class="modal-dialog">
 			  <div class="modal-content">
 				<div class="modal-header bg-dark">
-				  <h5 class="modal-title text-white" id="addLectureLabel">افزودن ویدیو</h5>
+				  <h5 class="modal-title text-white" id="addLectureLabel">افزودن فصل</h5>
 				  <button type="button" class="btn btn-sm btn-light mb-0" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
 				</div>
 				<div class="modal-body">
 				  <form class="row text-start g-3">
 							  <!-- Course name -->
 							  <div class="col-12">
-								  <label class="form-label">نام ویدیو <span class="text-danger">*</span></label>
-								  <input type="text" class="form-control" placeholder="نام ویدیو را وارد کنید">
+								  <label class="form-label">نام فصل <span class="text-danger">*</span></label>
+								  <input type="text" class="form-control" placeholder="نام فصل را وارد کنید">
 							  </div>
 						  </form>
 				</div>
@@ -473,26 +473,23 @@
 			<div class="modal-dialog">
 			  <div class="modal-content">
 				<div class="modal-header bg-dark">
-				  <h5 class="modal-title text-white" id="addTopicLabel">افزودن دوره</h5>
+				  <h5 class="modal-title text-white" id="addTopicLabel">افزودن قسمت</h5>
 				  <button type="button" class="btn btn-sm btn-light mb-0" data-bs-dismiss="modal" aria-label="Close"><i class="bi bi-x-lg"></i></button>
 				</div>
 				<div class="modal-body">
 				  <form class="row text-start g-3">
 							  <!-- Topic name -->
 							  <div class="col-md-6">
-								  <label class="form-label">نام دوره</label>
-								  <input class="form-control" type="text" placeholder="نام دوره">
+								  <label class="form-label">نام فارسی قسمت</label>
+								  <input class="form-control" type="text" >
 							  </div>
 							  <!-- Video link -->
 							  <div class="col-md-6">
-								  <label class="form-label">لینک ویدیو</label>
-								  <input class="form-control" type="text" placeholder="لینک ویدیو">
+								  <label class="form-label">نام انگلیسی قسمت</label>
+								  <input class="form-control" type="text" >
 							  </div>
 							  <!-- Description -->
-							  <div class="col-12 mt-3">
-								  <label class="form-label">توضیحات</label>
-								  <textarea class="form-control" rows="4" placeholder="" spellcheck="false"></textarea>
-							  </div>
+							  
 							  <!-- Buttons -->
 							  <div class="col-6 mt-3">
 								  <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
@@ -504,6 +501,35 @@
 									  <label class="btn btn-sm btn-light btn-primary-soft-check border-0 m-0" for="option2">پولی</label>
 								  </div>
 							  </div>
+
+							  <div class="col-12">
+								<div class="text-center justify-content-center align-items-center p-4 p-sm-5 border border-2 border-dashed position-relative rounded-3">
+									<label class="form-label">آپلود ویدیو</label>
+									
+										<div class="input-group mb-3">
+											<input type="text" class="form-control upload-name-mp4 border-end-0" id="inputGroupFile01"/>
+											<span class="btn btn btn-secondary-soft cursor-pointer upload-button-mp4 border-start-0">آپلود ویدئو</span>
+											
+									</div>
+									<input type="file" class="d-none hidden-upload-mp4"/>	
+									<div class="progress m-b-10">
+										<div class="progress-bar" role="progressbar" style="width: 25%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100">25%
+										</div>
+									</div>
+								</div>	
+							</div>
+
+							  <div class="col-12">
+								<div class="text-center justify-content-center align-items-center p-4 p-sm-5 border border-2 border-dashed position-relative rounded-3">
+									<label class="form-label">ضمیمه</label>
+										<div class="input-group mb-3">
+											<input type="text" class="form-control upload-name-image border-end-0" id="inputGroupFile"/>
+											<span class="btn btn btn-secondary-soft cursor-pointer upload-button-image border-start-0">آپلود ضمیمه</span>
+									</div>
+									<input type="file" class="d-none hidden-upload-image"/>	
+								</div>
+							</div>
+							
 						  </form>
 				</div>
 				<div class="modal-footer">
@@ -533,6 +559,27 @@
 
 <!-- Template Functions -->
 <script src="assets/js/functions.js"></script>
+<script>
+	
+	// Upload image
+	document.querySelector(".upload-button-image").onclick = function() {
+		 document.querySelector(".hidden-upload-image").click(); 
+   };
+
+   document.querySelector(".hidden-upload-image").onchange = function() {
+	      document.querySelector(".upload-name-image").value = event.target.files[0].name;
+	};	
+
+   // Upload Video .mp4
+	   document.querySelector(".upload-button-mp4").onclick = function() {
+		 document.querySelector(".hidden-upload-mp4").click(); 
+   };
+
+   document.querySelector(".hidden-upload-mp4").onchange = function() {
+	      document.querySelector(".upload-name-mp4").value = event.target.files[0].name;
+	};	
+	
+</script>
 </body>
 
 </html>

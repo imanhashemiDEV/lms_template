@@ -357,8 +357,7 @@
 				<div class="text-center justify-content-center align-items-center p-4 p-sm-5 border border-2 border-dashed position-relative rounded-3">
 					<label class="form-label">آپلود ویدیو</label>
 					
-						<div class="input-group mb-3">
-						<label class="input-group-text" dir="ltr">.mp4</label>
+						<div class="input-group mb-3">						
 							<input type="text" class="form-control upload-name-mp4 border-end-0" id="inputGroupFile01"/>
 							<span class="btn btn btn-secondary-soft cursor-pointer upload-button-mp4 border-start-0">آپلود فایل</span>
 							
@@ -438,7 +437,6 @@
 <script src="assets/js/functions.js"></script>
 <script>
 	
-
 	// Upload image
 	document.querySelector(".upload-button-image").onclick = function() {
 		 document.querySelector(".hidden-upload-image").click(); 
@@ -456,8 +454,6 @@
    document.querySelector(".hidden-upload-mp4").onchange = function() {
 	      document.querySelector(".upload-name-mp4").value = event.target.files[0].name;
 	};	
-   
-
 	
 </script>
 </body>
