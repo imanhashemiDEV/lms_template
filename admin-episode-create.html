@@ -523,10 +523,10 @@
 								<div class="text-center justify-content-center align-items-center p-4 p-sm-5 border border-2 border-dashed position-relative rounded-3">
 									<label class="form-label">ضمیمه</label>
 										<div class="input-group mb-3">
-											<input type="text" class="form-control upload-name-image border-end-0" id="inputGroupFile"/>
-											<span class="btn btn btn-secondary-soft cursor-pointer upload-button-image border-start-0">آپلود ضمیمه</span>
+											<input type="text" class="form-control upload-name-file border-end-0" id="inputGroupFile"/>
+											<span class="btn btn btn-secondary-soft cursor-pointer upload-button-file border-start-0">آپلود ضمیمه</span>
 									</div>
-									<input type="file" class="d-none hidden-upload-image"/>	
+									<input type="file" class="d-none hidden-upload-file"/>	
 								</div>
 							</div>
 							
@@ -561,13 +561,13 @@
 <script src="assets/js/functions.js"></script>
 <script>
 	
-	// Upload image
-	document.querySelector(".upload-button-image").onclick = function() {
-		 document.querySelector(".hidden-upload-image").click(); 
+	// Upload file
+	document.querySelector(".upload-button-file").onclick = function() {
+		 document.querySelector(".hidden-upload-file").click(); 
    };
 
-   document.querySelector(".hidden-upload-image").onchange = function() {
-	      document.querySelector(".upload-name-image").value = event.target.files[0].name;
+   document.querySelector(".hidden-upload-file").onchange = function() {
+	      document.querySelector(".upload-name-file").value = event.target.files[0].name;
 	};	
 
    // Upload Video .mp4
